@@ -1,4 +1,5 @@
 body {
+    font-family: 'VT323', monospace;
     background: #EF3B36;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -8,7 +9,7 @@ body {
 .container {
     background-color: white;
     margin: 0 auto;
-    margin-top: 15vh;
+    margin-top: 7vh;
     text-align: center;
     width: 70vw;
     height: 70vh;
@@ -16,6 +17,7 @@ body {
 }
 
 #searchField {
+    margin-top: 15px;
     width: 300px;
     height: 20px;
     border-radius: 5px;
@@ -23,4 +25,22 @@ body {
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+h2, li {
+    text-transform: capitalize;
+}
+
+img {
+    height: 200px;
+    width: auto;
 }
