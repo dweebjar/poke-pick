@@ -23,6 +23,10 @@ body {
     border-radius: 5px;
 }
 
+.align {
+    display: inline-block;
+}
+
 textarea:focus, input:focus{
     outline: none;
 }
@@ -41,6 +45,6 @@ h2, li {
 }
 
 img {
-    height: 200px;
+    height: 300px;
     width: auto;
 }
