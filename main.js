@@ -14,16 +14,17 @@ document.querySelector('.search').addEventListener('submit', e => {
 const addPoke = (name, type, img) => {
     const markup = `
     <h2>${name}</h2>
-    <div class="align">
-        <img src="${img}">
-    </div>
-    <div class="align">
-        <ul>
-            <li>Type: ${type}</li>
-            <li>Weak to: ${calcWeakness(type)}</li>
-        </ul>
-    </div>
-    
+    <div class="container">
+        <div class="visual">
+            <img src="${img}">
+        </div>
+        <div class="desc">
+            <ul>
+                <li>Type: ${type}</li>
+                <li>Weak to: ${calcWeakness(type)}</li>
+            </ul>
+        </div>
+    </div> 
     `;
 
     document.querySelector('#pokeData').insertAdjacentHTML('afterbegin', markup);

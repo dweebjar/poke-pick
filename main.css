@@ -6,13 +6,13 @@ body {
 
 }
 
-.container {
+.allContent {
     background-color: white;
     margin: 0 auto;
     margin-top: 7vh;
     text-align: center;
-    width: 70vw;
-    height: 70vh;
+    width: 60vw;
+    height: 65vh;
     border-radius: 5px;
 }
 
@@ -21,10 +21,37 @@ body {
     width: 300px;
     height: 20px;
     border-radius: 5px;
+    margin-bottom: 25px;
 }
 
-.align {
+#pokeData {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    font-size: 1.25em;
+    color: #fff;
+    background: #CC0000;
+    padding: 8px;
+    border-radius: 5px;
     display: inline-block;
+    border: none;
+}
+
+input {
+    border: 2px black solid;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding: 8px;
+    font-family: 'VT323', monospace;
 }
 
 textarea:focus, input:focus{
@@ -34,10 +61,12 @@ textarea:focus, input:focus{
 h1 {
     text-align: center;
     font-size: 4em;
+    margin-top: 25px;
 }
 
 ul {
     list-style-type: none;
+    font-size: 1.5em;
   }
 
 h2, li {
@@ -45,6 +74,29 @@ h2, li {
 }
 
 img {
-    height: 300px;
+    height: 250px;
     width: auto;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fab {
+    margin-right: 4px;
+    margin-left: 4px;
 }
