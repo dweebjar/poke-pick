@@ -58,6 +58,10 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 h1 {
     text-align: center;
     font-size: 4em;

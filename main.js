@@ -2,7 +2,7 @@
 
 document.querySelector('.search').addEventListener('submit', e => {
     e.preventDefault();
-    document.querySelector('#pokeData').innerHTML = '';
+    // document.querySelector('#pokeData').innerHTML = '';
     const pokemon = document.querySelector('#searchField').value.toLowerCase();
     const URL = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
     fetch(URL)
@@ -28,6 +28,7 @@ const addPoke = (name, type, img, id) => {
     </div> 
     `;
 
+    document.querySelector('#pokeData').innerHTML = '';
     document.querySelector('#pokeData').insertAdjacentHTML('afterbegin', markup);
 };
 
