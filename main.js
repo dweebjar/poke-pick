@@ -7,11 +7,11 @@ document.querySelector('.search').addEventListener('submit', e => {
     const URL = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
     fetch(URL)
     .then(data=>{return data.json()})
-    .then(res=>{addPoke(res.name, res.types[0].type.name, res.sprites.front_default)});
+    .then(res=>{addPoke(res.name, res.types[0].type.name, res.sprites.front_default, res.id)});
     document.querySelector('#searchField').value = '';
 });
 
-const addPoke = (name, type, img) => {
+const addPoke = (name, type, img, id) => {
     const markup = `
     <h2>${name}</h2>
     <div class="container">
@@ -20,6 +20,7 @@ const addPoke = (name, type, img) => {
         </div>
         <div class="desc">
             <ul>
+                <li>Pok&eacute; Index: #${id}</li>
                 <li>Type: ${type}</li>
                 <li>Weak to: ${calcWeakness(type)}</li>
             </ul>
